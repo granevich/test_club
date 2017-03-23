@@ -15,7 +15,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic,cyrillic-ext');
 html
 {
     font-family: sans-serif;
@@ -558,12 +558,302 @@ label.radio_label
             box-shadow: none;
 }
 
+.table
+{
+    display: inline-block;
+    float: left;
+
+    width: 230px;
+    height: 145px;
+    margin-top: 32px; 
+    margin-left: 92px;
+
+    border: solid 1px #e5e5e5;
+}
+.table div
+{
+    font-size: 12px;
+
+    height: 48px;
+    padding: 16px 0 14px 30px;
+
+    cursor: pointer; 
+    text-transform: uppercase;
+
+    color: #424e56;
+    border-bottom: solid 1px #e5e5e5;
+}
+.table div.active .pass
+{
+    font-weight: bold;
+}
+
+.pass_chang
+{
+    font-size: 24px; 
+
+    float: left;
+
+    width: 70%;
+    margin-top: 32px;
+    margin-left: 17px;
+
+    text-align: left;
+
+    color: #424e56;
+}
+
+.new_pass
+{
+    font-size: 14px; 
+
+    float: left;
+
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 17px;
+
+    text-align: left;
+
+    color: #424e56;
+}
+
+.forms
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    float: left;
+
+    width: 300px;
+    margin-top: 18px;
+    margin-left: 17px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+}
+.forms label.label_form
+{
+    font-size: 12px;
+
+    padding-left: 34px; 
+
+    color: #424e56;
+}
+.forms input
+{
+    width: 300px;
+    height: 45px;
+    margin-bottom: 5px; 
+    padding-left: 10px;
+
+    border: solid 1px #e5e5e5;
+    -webkit-border-radius: 100px;
+            border-radius: 100px;
+    outline: none;
+}
+.forms button
+{
+    font-size: 12px;
+    font-weight: bold;
+
+    width: 300px;
+    height: 45px;
+    margin-top: 5px;
+
+    text-transform: uppercase; 
+
+    color: #fff;
+    border: none;
+    -webkit-border-radius: 100px;
+            border-radius: 100px;
+    outline: none;
+    background-color: #109dff;
+}
+
+.table .active.sales
+{
+    font-weight: 900;
+}
+
+table
+{
+    float: left;
+
+    width: 457px; 
+    margin-top: 32px;
+    margin-left: 17px;
+}
+table caption
+{
+    font-size: 24px;
+
+    margin-bottom: 14px; 
+
+    text-align: left;
+
+    color: #424e56;
+}
+table .name
+{
+    font-size: 14px;
+
+    padding: 6px 0; 
+
+    color: #424e56;
+}
+table .price
+{
+    font-size: 14px;
+    font-weight: bold; 
+
+    color: #32aaff;
+}
+
+.give_email
+{
+    margin-top: 15px; 
+    margin-left: 231px;
+}
+.give_email .email
+{
+    font-size: 24px; 
+
+    color: #424e56;
+}
+.give_email .enter_email
+{
+    font-size: 12px; 
+
+    width: 500px;
+
+    color: #424e56;
+}
+
+.form_recover
+{
+    width: 598px;
+    margin-top: 18px; 
+    margin-left: 231px;
+}
+.form_recover label
+{
+    font-size: 12px;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    color: #424e56;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+}
+.form_recover label input
+{
+    font-size: 14px;
+
+    width: 598px;
+    height: 45px;
+    padding-left: 10px; 
+
+    border: solid 1px #e5e5e5;
+    -webkit-border-radius: 100px;
+            border-radius: 100px;
+    outline: none;
+}
+.form_recover button
+{
+    font-size: 12px;
+    font-weight: 900;
+
+    position: relative;
+    top: -45px;
+    left: 370px;
+
+    width: 227px;
+    height: 45px;
+
+    text-transform: uppercase; 
+
+    color: #3f474d;
+    border: none;
+    -webkit-border-radius: 100px;
+            border-radius: 100px;
+    background-color: #ffde00;
+}
+
+.table .active.history
+{
+    font-weight: 900;
+}
+
+table
+{
+    font-size: 12px; 
+
+    width: 800px;
+
+    color: #424e56;
+}
+table caption
+{
+    margin-bottom: 16px;
+}
+table td
+{
+    height: 30px;
+}
+table .caption
+{
+    font-weight: 900;
+
+    height: 15px;
+    padding-bottom: 5px; 
+
+    color: #424e56;
+}
+table .total
+{
+    font-size: 12px;
+    font-weight: 600;
+
+    height: 60px;
+
+    text-transform: uppercase; 
+
+    color: #424e56;
+}
+table .total_sum
+{
+    font-size: 14px;
+
+    color: #424e56;
+}
+table .total_sum span
+{
+    font-size: 24px;
+    font-weight: 600;
+
+    color: #424e56;
+}
+
 *
 {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+
+    outline: none;
 }
 
 section.wrapper
@@ -575,7 +865,7 @@ section.wrapper
 section.wrapper header
 {
     font-size: 72px;
-    font-weight: 800; 
+    font-weight: 900; 
 
     display: -webkit-box;
     display: -webkit-flex;
@@ -624,20 +914,15 @@ section.wrapper article .breadcrumbs
 }
 section.wrapper article .breadcrumbs .home_icon
 {
-    margin-right: 16px;
-}
-section.wrapper article .breadcrumbs .home_icon:before
-{
-    font-family: 'fontello', sans-serif;
-    font-size: 12px; 
-
-    content: '\e802';
-
-    color: #bbb;
+    margin-right: 10px;
 }
 section.wrapper article .breadcrumbs .shopping
 {
     font-size: 12px;
+}
+section.wrapper article .breadcrumbs .shopping a
+{
+    text-decoration: none; 
 
     color: #bbb;
 }
@@ -648,12 +933,14 @@ section.wrapper article .breadcrumbs .shopping:after
     margin-left: 12px;
 
     content: '>';
+
+    color: #bbb;
 }
 section.wrapper article .breadcrumbs .enter_and_reg
 {
     font-size: 12px; 
 
-    margin-left: 12px;
+    margin-left: 7px;
 }
 section.wrapper article .breadcrumbs .enter_and_reg a
 {
@@ -926,7 +1213,7 @@ section.wrapper article .bottom_descr a
 section.wrapper footer
 {
     font-size: 72px;
-    font-weight: 800; 
+    font-weight: 900; 
 
     display: -webkit-box;
     display: -webkit-flex;

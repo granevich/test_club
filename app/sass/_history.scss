@@ -1,0 +1,40 @@
+.table{
+  .active.history{
+    font-weight: 900;
+  }
+}
+
+table{
+  width: 800px;
+  color: #424e56;
+  font-size: 12px;
+  caption{
+    margin-bottom: 16px;
+  }
+  td{
+    height: 30px;
+  }
+  .caption{
+    height: 15px;
+    color: #424e56;
+    font-weight: 900;
+    padding-bottom: 5px;
+  }
+  .total{
+    height: 60px;
+    color: #424e56;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .total_sum{
+    span{
+      font-size: 24px;
+      font-weight: 600;
+      color: #424e56;
+    }
+    font-size: 14px;
+    color: #424e56;
+  }
+
+}

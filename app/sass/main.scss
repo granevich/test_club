@@ -1,7 +1,11 @@
 @import "normalize";
 @import "fonts";
 @import "checkbox";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import "pass_changing";
+@import "sales";
+@import "recover_pass";
+@import "history";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic,cyrillic-ext');
 
 $FontMain: 'Open Sans', sans-serif;
 @mixin parts{
@@ -14,11 +18,12 @@ $FontMain: 'Open Sans', sans-serif;
   font-size: 72px;
   text-transform: uppercase;
   color: #c0c0c0;
-  font-weight: 800;
+  font-weight: 900;
 }
 *{
   box-sizing: border-box;
   font-family: $FontMain;
+  outline: none;
 
 }
 
@@ -48,22 +53,19 @@ section.wrapper{
       margin-left: 92px;
       margin-bottom: 3px;
       .home_icon{
-        margin-right: 16px;
-
-      }
-      .home_icon:before{
-        font-family: 'fontello', sans-serif;
-        content:'\e802';
-        color: #bbbbbb;
-        font-size: 12px;
+        margin-right: 10px;
       }
       .shopping{
         font-size: 12px;
-        color: #bbbbbb;
+        a{
+          color: #bbbbbb;
+          text-decoration: none;
+        }
       }
       .shopping:after{
+        color: #bbbbbb;
         content:'>';
-        margin-left: 12px;
+        margin-left:12px;
         font-weight: 900;
       }
       .enter_and_reg{
@@ -72,7 +74,7 @@ section.wrapper{
           text-decoration: none;
         }
 
-        margin-left: 12px;
+        margin-left: 7px;
         font-size: 12px;
       }
     }

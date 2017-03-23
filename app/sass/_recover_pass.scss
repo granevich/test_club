@@ -1,0 +1,52 @@
+.give_email{
+  margin-left: 231px;
+  margin-top: 15px;
+  .email{
+    color: #424e56;
+    font-size: 24px;
+  }
+  .enter_email{
+    width: 500px;
+    color: #424e56;
+    font-size: 12px;
+  }
+}
+.form_recover{
+  width: 598px;
+  margin-left: 231px;
+  margin-top: 18px;
+  label{
+    color: #424e56;
+    font-size: 12px;
+    display: flex;
+    flex-flow: column;
+    input{
+      width: 598px;
+      height: 45px;
+      border-radius: 100px;
+      border: solid 1px #e5e5e5;
+      outline: none;
+      font-size: 14px;
+      padding-left: 10px;
+    }
+  }
+  button{
+    width: 227px;
+    position: relative;
+    top: -45px;
+    left: 370px;
+
+    height: 45px;
+    color: #3f474d;
+    font-size: 12px;
+    font-weight: 900;
+    background-color: #ffde00;
+    border-radius: 100px;
+    border: none;
+    text-transform: uppercase;
+
+
+
+  }
+
+}
