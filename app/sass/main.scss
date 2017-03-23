@@ -1,0 +1,237 @@
+@import "normalize";
+@import "fonts";
+@import "checkbox";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$FontMain: 'Open Sans', sans-serif;
+@mixin parts{
+
+  width: 100%;
+  background-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 72px;
+  text-transform: uppercase;
+  color: #c0c0c0;
+  font-weight: 800;
+}
+*{
+  box-sizing: border-box;
+  font-family: $FontMain;
+
+}
+
+section.wrapper{
+  width: 1351px;
+  margin: auto;
+
+  height: auto;
+  header{
+    height: 318px;
+           @include parts;
+  }
+  article{
+    width: 100%;
+    height: 881px;
+    background-color: #ffffff;
+    .registration{
+      margin: 25px 0 3px 92px ;
+      .enter{
+
+        font-size: 36px;
+        font-weight: 600;
+        color: #424e56;
+      }
+    }
+    .breadcrumbs{
+      margin-left: 92px;
+      margin-bottom: 3px;
+      .home_icon{
+        margin-right: 16px;
+
+      }
+      .home_icon:before{
+        font-family: 'fontello', sans-serif;
+        content:'\e802';
+        color: #bbbbbb;
+        font-size: 12px;
+      }
+      .shopping{
+        font-size: 12px;
+        color: #bbbbbb;
+      }
+      .shopping:after{
+        content:'>';
+        margin-left: 12px;
+        font-weight: 900;
+      }
+      .enter_and_reg{
+        a{
+          color: #32aaff;
+          text-decoration: none;
+        }
+
+        margin-left: 12px;
+        font-size: 12px;
+      }
+    }
+ .greetings{
+   width: 420px;
+   margin: auto;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   .hello{
+     color: #424e56;
+     text-transform: uppercase;
+     font-size: 24px;
+     font-weight: bolder;
+   }
+  .waiting{
+    font-size: 24px;
+    color: #424e56;
+  }
+
+ }
+  .descr{
+      margin-top: 9px;
+      margin-bottom: 55px;
+      width: 500px;
+      margin: auto;
+      font-size: 12px;
+      text-align: center;
+      color: #424e56;
+    }
+  .forms_wrapper{
+    width: 694px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    label.label_form{
+      font-size: 12px;
+      color: #424e56;
+      padding-left: 34px;
+
+    }
+    input{
+      width: 260px;
+      height: 45px;
+      border-radius: 100px;
+      border: solid 1px #e5e5e5;
+      outline: none;
+      padding-left:10px ;
+      margin-bottom: 5px;
+
+    }
+    .left_form{
+      padding-left: 8px;
+
+      width: 260px;
+      display: flex;
+      flex-flow: column;
+      div{
+        margin-bottom: 24px;
+      }
+      button{
+        width: 260px;
+        height: 45px;
+        border-radius: 100px;
+        background-color: #ffde00;
+        border: none;
+        color: #3f474d;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+    .right_form{
+      padding-left: 10px;
+      width: 305px;
+      .point_mail{
+        margin-top: 15px;
+        margin-bottom: 21px;
+        font-size: 11px;
+        color: #bbbbbb;
+        padding-left: 35px;
+        a{
+          color: #32aaff;
+          text-decoration: none;
+        }
+      }
+      button{
+        width: 260px;
+        height: 45px;
+        border-radius: 100px;
+        background-color: #109dff;
+        border: none;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+      .or{
+        margin-top: 17px;
+        width: 100%;
+        text-align: center;
+        color: #424e56;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+    .social{
+                            @mixin circle{
+                              width: 90px;
+                              height: 90px;
+                              border-radius: 50%;
+                              cursor: pointer;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+
+                            }
+      margin-top: 29px;
+      display: flex;
+      justify-content: space-between;
+      width: 203px;
+      margin: auto;
+      .facebook{
+        @include circle;
+        background-color: #4e67a4;
+        img{
+          width: 11px;
+          height: 20px;
+        }
+      }
+      .vk{
+        background-color: #6a8cb1;
+        @include circle;
+        img{
+          width: 23px;
+          height: 13px;
+        }
+      }
+
+      }
+    .bottom_descr{
+        margin-top: 33px;
+        text-align: center;
+        width: 486px;
+        margin: auto;
+        color: #bbbbbb;
+        font-size: 11px;
+
+      a{
+        color: #32aaff;
+        text-decoration: none;
+      }
+    }
+  }
+  footer{
+    height: 901px;
+            @include parts;
+  }
+
+}
