@@ -570,6 +570,10 @@ label.radio_label
 
     border: solid 1px #e5e5e5;
 }
+.table a .active.pass
+{
+    font-weight: 900;
+}
 .table div
 {
     font-size: 12px;
@@ -582,10 +586,6 @@ label.radio_label
 
     color: #424e56;
     border-bottom: solid 1px #e5e5e5;
-}
-.table div.active .pass
-{
-    font-weight: bold;
 }
 
 .pass_chang
@@ -791,6 +791,11 @@ table .price
     background-color: #ffde00;
 }
 
+.table a
+{
+    text-decoration: none;
+}
+
 .table .active.history
 {
     font-weight: 900;
@@ -914,6 +919,7 @@ section.wrapper article .breadcrumbs
 }
 section.wrapper article .breadcrumbs .home_icon
 {
+    width: 15px;
     margin-right: 10px;
 }
 section.wrapper article .breadcrumbs .shopping

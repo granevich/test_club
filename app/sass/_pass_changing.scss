@@ -6,6 +6,11 @@
   border: solid 1px #e5e5e5;
   margin-left: 92px;
   margin-top: 32px;
+  a{
+    .active.pass{
+      font-weight: 900;
+    }
+  }
 
   div{
     text-transform: uppercase;
@@ -16,9 +21,7 @@
     border-bottom:solid 1px #e5e5e5 ;
     cursor: pointer;
   }
- div.active .pass{
-   font-weight: bold;
- }
+
 }
 .pass_chang{
   width: 70%;
